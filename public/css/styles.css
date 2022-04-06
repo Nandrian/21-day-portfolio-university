@@ -1,4 +1,4 @@
-/* Generated on: Mon Apr 04 2022 18:21:02 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Wed Apr 06 2022 15:12:29 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -55,6 +55,7 @@
    }
    
    p {
+     max-width: 60ch;
      margin-bottom: 10px;
    }
    
@@ -67,6 +68,7 @@
      max-width: 450px;
      margin-bottom: 60px;
      font-family: 'DM Serif Display', sans-serif;
+     font-size: 32px;
    }
    
    .text-block {
@@ -112,6 +114,7 @@
    
    .nav-link.button {
      margin-top: 12px;
+     margin-left: 20px;
      padding-top: 8px;
      padding-bottom: 8px;
      border-radius: 3px;
@@ -125,11 +128,11 @@
      margin-bottom: 15px;
      font-family: 'DM Serif Display', sans-serif;
      font-size: 28px;
+     text-align: left;
    }
    
    .paragraph {
-     max-width: 450px;
-     margin-bottom: 30px;
+     margin-bottom: 20px;
      color: rgba(0, 0, 0, 0.68);
    }
    
@@ -153,7 +156,7 @@
      display: -ms-flexbox;
      display: flex;
      min-height: 400px;
-     padding: 30px;
+     padding: 60px;
      -webkit-box-orient: vertical;
      -webkit-box-direction: normal;
      -webkit-flex-direction: column;
@@ -162,6 +165,7 @@
    }
    
    .button-text {
+     display: inline-block;
      margin-top: auto;
      -webkit-box-flex: 0;
      -webkit-flex: 0 auto;
@@ -170,16 +174,17 @@
    }
    
    .project-name-preview {
+     margin-top: 10px;
      font-family: 'DM Serif Display', sans-serif;
      font-size: 20px;
    }
    
    .project-type-preview {
-     color: hsla(0, 0%, 100%, 0.7);
+     color: hsla(0, 0%, 100%, 0.86);
    }
    
    .project-paragraph-preview {
-     color: hsla(0, 0%, 100%, 0.6);
+     color: hsla(0, 0%, 100%, 0.87);
    }
    
    .field-label {
@@ -193,7 +198,7 @@
      display: -webkit-flex;
      display: -ms-flexbox;
      display: flex;
-     padding: 30px;
+     padding: 60px;
      -webkit-box-orient: vertical;
      -webkit-box-direction: normal;
      -webkit-flex-direction: column;
@@ -210,7 +215,7 @@
    }
    
    .dark-paragraph {
-     margin-bottom: 30px;
+     margin-bottom: 20px;
    }
    
    .submit-button {
@@ -225,6 +230,7 @@
      flex: 0 auto;
      border-radius: 5px;
      background-color: #6057c3;
+     color: #fff;
    }
    
    .footer-holder {
@@ -247,7 +253,7 @@
      margin-bottom: 30px;
    }
    
-   .paragraph-2 {
+   .footer-paragraph {
      max-width: 600px;
      margin-bottom: 30px;
      text-align: center;
@@ -303,7 +309,7 @@
    
    .project-heading.secondary {
      margin-bottom: 60px;
-     color: rgba(0, 0, 0, 0.45);
+     color: rgba(0, 0, 0, 0.55);
    }
    
    .project-heading.smaller {
@@ -331,12 +337,16 @@
    
    .project-info {
      margin-bottom: 60px;
-     color: rgba(0, 0, 0, 0.71);
+     color: rgba(0, 0, 0, 0.66);
    }
    
    .project-info.other {
      margin-bottom: 5px;
      color: hsla(0, 0%, 100%, 0.75);
+   }
+   
+   .project-description {
+     margin-bottom: 30px;
    }
    
    .project-description h2 {
@@ -386,8 +396,8 @@
      display: -ms-grid;
      display: grid;
      grid-auto-columns: 1fr;
-     grid-column-gap: 16px;
-     grid-row-gap: 16px;
+     grid-column-gap: 30px;
+     grid-row-gap: 30px;
      -ms-grid-columns: 1fr 1fr 1fr;
      grid-template-columns: 1fr 1fr 1fr;
      -ms-grid-rows: auto;
@@ -405,8 +415,12 @@
      padding: 30px;
    }
    
+   .link-block {
+     position: relative;
+   }
+   
    .link-block-2 {
-     padding: 10px;
+     padding: 10px 30px;
      border-radius: 5px;
      background-color: #6057c3;
    }
@@ -461,6 +475,10 @@
    
    .selected-project-effect {
      position: absolute;
+     left: 0%;
+     top: 0%;
+     right: 0%;
+     bottom: 0%;
      z-index: -1;
      width: 100%;
      height: 100%;
@@ -489,12 +507,15 @@
      -webkit-align-items: center;
      -ms-flex-align: center;
      align-items: center;
+     background-color: #171718;
+     -webkit-perspective: 1000px;
+     perspective: 1000px;
    }
    
    .utility-page-content {
      position: relative;
      z-index: 3;
-     display: none;
+     display: block;
      -webkit-box-orient: vertical;
      -webkit-box-direction: normal;
      -webkit-flex-direction: column;
@@ -520,6 +541,7 @@
      display: -webkit-flex;
      display: -ms-flexbox;
      display: flex;
+     max-width: 350px;
      padding: 30px;
      -webkit-box-orient: vertical;
      -webkit-box-direction: normal;
@@ -533,7 +555,7 @@
      border-radius: 15px;
      background-color: rgba(0, 0, 0, 0.5);
    }
-
+   
    ._404 {
      margin-bottom: 30px;
      font-family: 'DM Serif Display', sans-serif;
@@ -563,8 +585,8 @@
    .circle-image {
      position: relative;
      z-index: 2;
-     width: 420px;
-     margin-top: 85px;
+     width: 350px;
+     margin-top: 0px;
      border-radius: 50%;
    }
    
@@ -654,6 +676,10 @@
    
    .password-cell-color.orange {
      background-color: #ee4507;
+     -webkit-transform: translate3d(0px, 0px, 300px);
+     transform: translate3d(0px, 0px, 300px);
+     -webkit-transform-style: preserve-3d;
+     transform-style: preserve-3d;
    }
    
    .password-cell-color.yellow {
@@ -676,11 +702,38 @@
      background-color: #b334ee;
    }
    
+   .project-client-preview {
+     margin-top: auto;
+     -webkit-box-ordinal-group: 2;
+     -webkit-order: 1;
+     -ms-flex-order: 1;
+     order: 1;
+   }
+   
+   .success-message {
+     background-color: transparent;
+   }
+   
+   .lottie-animation {
+     max-width: 150px;
+     margin-right: auto;
+     margin-bottom: -20px;
+     margin-left: auto;
+   }
+   
+   .paragraph-4 {
+     text-align: left;
+   }
+   
    @media screen and (min-width: 1920px) {
      .heading {
        max-width: 630px;
-       font-size: 56px;
        line-height: 1.2;
+     }
+   
+     .section {
+       padding-top: 100px;
+       padding-bottom: 100px;
      }
    
      .container {
@@ -709,7 +762,7 @@
        font-size: 16px;
      }
    
-     .paragraph-2 {
+     .footer-paragraph {
        max-width: 660px;
        font-size: 16px;
        line-height: 1.1;
@@ -729,6 +782,14 @@
        grid-template-columns: 0.5fr 1fr;
      }
    
+     .pproject-label {
+       font-size: 18px;
+     }
+   
+     .project-description h2 {
+       max-width: 40ch;
+     }
+   
      .project-grid-image {
        height: 500px;
      }
@@ -738,9 +799,13 @@
        line-height: 1.2;
      }
    
+     .frosted-glass {
+       max-width: 320px;
+     }
+   
      .password-heading {
        max-width: 630px;
-       font-size: 56px;
+       font-size: 30px;
        line-height: 1.2;
      }
    }
@@ -750,19 +815,14 @@
        margin-bottom: 30px;
      }
    
-     .section {
-       padding-top: 30px;
-       padding-bottom: 30px;
-     }
-   
      .nav-link {
-       padding-top: 10px;
-       padding-bottom: 10px;
+       padding: 10px 30px;
        background-color: #fff;
      }
    
      .nav-link.button {
        margin-top: 0px;
+       margin-left: 0px;
        padding-top: 10px;
        padding-bottom: 10px;
        border-radius: 0px;
@@ -777,15 +837,20 @@
    
      .project-details {
        min-height: 300px;
+       padding: 30px;
+     }
+   
+     .form {
+       padding: 30px;
      }
    
      .menu-button {
-       background-color: #fff;
+       color: #221f1f;
      }
    
      .menu-button.w--open {
-       background-color: #fff;
-       color: #000;
+       background-color: #000;
+       color: #fff;
      }
    
      .project-heading.secondary {
@@ -799,6 +864,16 @@
      .project-side-by-side {
        -ms-grid-columns: 0.5fr 1fr;
        grid-template-columns: 0.5fr 1fr;
+     }
+   
+     .image-grid {
+       grid-column-gap: 10px;
+       grid-row-gap: 10px;
+     }
+   
+     .other-projects {
+       grid-column-gap: 10px;
+       grid-row-gap: 10px;
      }
    
      .project-image {
@@ -837,13 +912,13 @@
    @media screen and (max-width: 767px) {
      .heading {
        margin-bottom: 30px;
-       font-size: 30px;
+       font-size: 22px;
        line-height: 1.1;
      }
    
      .section {
-       padding-top: 15px;
-       padding-bottom: 15px;
+       padding-top: 30px;
+       padding-bottom: 30px;
      }
    
      .brand {
@@ -851,7 +926,11 @@
      }
    
      .secondary-heading {
-       font-size: 22px;
+       font-size: 20px;
+     }
+   
+     .project-details {
+       padding: 15px;
      }
    
      .project-name-preview {
@@ -860,6 +939,10 @@
    
      .project-paragraph-preview {
        font-size: 12px;
+     }
+   
+     .form {
+       padding: 15px;
      }
    
      .text-block-2 {
@@ -892,8 +975,10 @@
      }
    
      .image-grid {
-       grid-column-gap: 15px;
-       grid-row-gap: 15px;
+       grid-column-gap: 10px;
+       grid-row-gap: 10px;
+       -ms-grid-columns: 1fr;
+       grid-template-columns: 1fr;
      }
    
      .project-grid-image {
@@ -919,6 +1004,14 @@
        line-height: 1.1;
      }
    
+     .frosted-glass {
+       max-width: 300px;
+     }
+   
+     ._404 {
+       font-size: 100px;
+     }
+   
      .password-heading {
        margin-bottom: 30px;
        font-size: 30px;
@@ -940,6 +1033,11 @@
        padding-top: 16px;
        padding-bottom: 16px;
        padding-left: 0px;
+     }
+   
+     .nav-link {
+       padding-right: 10px;
+       padding-left: 10px;
      }
    
      .secondary-heading {
@@ -993,7 +1091,7 @@
        grid-template-columns: 1fr;
      }
    
-     .image-3 {
+     .logo {
        width: 160px;
      }
    
@@ -1132,17 +1230,6 @@
    }
    
    #w-node-_996bda8b-9523-4a2f-a6eb-7fa7c25d1395-e245f21e {
-     -ms-grid-column: span 1;
-     grid-column-start: span 1;
-     -ms-grid-column-span: 1;
-     grid-column-end: span 1;
-     -ms-grid-row: span 1;
-     grid-row-start: span 1;
-     -ms-grid-row-span: 1;
-     grid-row-end: span 1;
-   }
-   
-   #w-node-_4d461b84-631a-38f6-8c2b-f013b8bc8eb3-856e4924 {
      -ms-grid-column: span 1;
      grid-column-start: span 1;
      -ms-grid-column-span: 1;
